@@ -1,0 +1,6 @@
+
+pip3 install virtualenv
+virtual venv --python=python3.9
+source venv/bin/activate
+pip3 install Flask-RESTful
+pip3 freeze
