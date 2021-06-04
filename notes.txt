@@ -4,3 +4,7 @@ virtual venv --python=python3.9
 source venv/bin/activate
 pip3 install Flask-RESTful
 pip3 freeze
+
+
+
+the frontend is from and edited from code base https://www.youtube.com/watch?v=zQyrwxMPm88 
