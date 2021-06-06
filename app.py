@@ -7,19 +7,14 @@ from flask_restful import Resource, Api, reqparse
 app = Flask(__name__)
 api = Api(app)
 
-class Hello(Resource):
+class HelloWorld(Resource):
     def get(self):
-        
-        retJson = {
-            "status":200,
-            "ratio": "Hello World",
-            "msg":"text generated successfully"
-        }
+        return {'hello': 'world'}
 
-        return jsonify(retJson)
+api.add_resource(HelloWorld, '/')
 
 # api.add_resource(Detect, '/detect')
-api.add_resource(Hello, '/')
+
 # api.add_resource(TextGenerationGpt2, '/generate')
 
 app.run(port=5000)
