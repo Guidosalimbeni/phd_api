@@ -1,6 +1,6 @@
 
 pip3 install virtualenv
-virtual venv --python=python3.9
+virtualenv venv --python=python3.9
 source venv/bin/activate
 pip3 install Flask-RESTful
 pip3 freeze > requirements.txt
@@ -10,3 +10,10 @@ pip install -r requirements.txt
 the frontend is from and edited from code base https://www.youtube.com/watch?v=zQyrwxMPm88 
 
 add to requirements.txt uwsgi (it will not work here but heroku knows how to install it)
+
+heroku --version
+heroku login
+
+
+heroku plugins:install heroku-builds
+heroku builds:cache:purge
