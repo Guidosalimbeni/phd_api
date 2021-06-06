@@ -1,0 +1,3 @@
+.vscode/settings.json
+venv/
+nlp/__pycache__/gpt_generation.cpython-39.pyc
