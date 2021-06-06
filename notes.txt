@@ -17,3 +17,5 @@ heroku login
 
 heroku plugins:install heroku-builds
 heroku builds:cache:purge
+
+heroku logs --tail --app whoamaiapi
