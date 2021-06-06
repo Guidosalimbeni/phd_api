@@ -10,7 +10,7 @@ pip install -r requirements.txt
 the frontend is from and edited from code base https://www.youtube.com/watch?v=zQyrwxMPm88 
 
 add to requirements.txt uwsgi (it will not work here but heroku knows how to install it)
-
+add runtime.txt with python-3.9.1
 heroku --version
 heroku login
 
